@@ -1,0 +1,6 @@
+@MillBackend_HostAddress = http://localhost:5079
+
+GET {{MillBackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
