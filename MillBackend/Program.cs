@@ -21,7 +21,7 @@ builder.Services.AddCors(options =>
 });
 
 builder.Services.AddScoped<UserService>();
-
+builder.Services.AddScoped<InventoryService>();
 builder.Services.AddControllers();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -31,6 +31,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 var app = builder.Build();
 
+Console.WriteLine($"Connection String: {builder.Configuration.GetConnectionString("DefaultConnection")}");
 
 
 // Configure the HTTP request pipeline.
@@ -46,5 +47,8 @@ app.UseCors("AllowAll");
 app.MapControllers();
 
 app.Run();
+
+Console.WriteLine($"Connection String: {builder.Configuration.GetConnectionString("DefaultConnection")}");
+
 
 

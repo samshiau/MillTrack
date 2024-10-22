@@ -1,1 +1,41 @@
-<p>dashboard works!</p>
+<div class="dashboard-container">
+    <h2>Inventory Dashboard</h2>
+  
+    <button (click)="navigateToAddItem()">Add Inventory Item</button>
+    <!-- Display items in a table or grid -->
+    <table *ngIf="inventoryItems.length > 0" class="inventory-table">
+      <thead>
+        <tr>
+          <th>Product Name</th>
+          <th>SKU</th>
+          <th>Description</th>
+          <th>Category</th>
+          <th>Location</th>
+          <th>Unit Price</th>
+          <th>Amount in Stock</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of inventoryItems">
+          <td>{{ item.name }}</td>
+          <td>{{ item.sku }}</td>
+          <td>{{ item.description }}</td>
+          <td>{{ item.category }}</td>
+          <td>{{ item.location }}</td>
+          <td>{{ item.unitPrice }}</td>  <!-- Format as currency -->
+          <td>{{ item.amountInStock }}</td>
+          <td>
+            <span *ngIf="item.isActive; else inactive">Active</span>
+            <ng-template #inactive>Inactive</ng-template>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <!-- Display a message if no items are available -->
+    <div *ngIf="inventoryItems.length === 0">
+      <p>No inventory items found.</p>
+    </div>
+  </div>
+  

@@ -9,4 +9,6 @@ public class ApplicationDbContext : DbContext
 
     // Define your database tables (DbSets)
     public DbSet<User> Users { get; set; }
+
+    public DbSet<InventoryItem> InventoryItems { get; set; }
 }

@@ -1,0 +1,76 @@
+/* Style the form container */
+.add-item-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style the form heading */
+  .add-item-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Style each form label */
+  .add-item-container label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  /* Style each input field */
+  .add-item-container input[type="text"],
+  .add-item-container input[type="number"],
+  .add-item-container input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  /* Style the checkbox separately */
+  .add-item-container input[type="checkbox"] {
+    width: auto;
+  }
+  
+  /* Style the submit button */
+  .add-item-container button[type="submit"] {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .add-item-container button[type="submit"]:hover {
+    background-color: #218838;
+  }
+  
+  /* Make the form responsive */
+  @media (max-width: 768px) {
+    .add-item-container {
+      padding: 15px;
+    }
+  
+    .add-item-container h2 {
+      font-size: 24px;
+    }
+  
+    .add-item-container input,
+    .add-item-container button {
+      font-size: 16px;
+    }
+  }
+  
