@@ -1,0 +1,96 @@
+/* Container styling for the form */
+.item-detail-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form heading */
+  .item-detail-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  /* Style each form label */
+  .item-detail-container label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  /* Style the input fields */
+  .item-detail-container input[type="text"],
+  .item-detail-container input[type="number"],
+  .item-detail-container input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  /* Special case for checkbox to not take full width */
+  .item-detail-container input[type="checkbox"] {
+    width: auto;
+  }
+  
+  /* Style for buttons */
+  .item-detail-container button[type="submit"],
+  .item-detail-container button[type="button"] {
+    width: 48%;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 4%;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+  
+  .item-detail-container button[type="button"] {
+    background-color: #dc3545; /* Red color for delete button */
+    margin-right: 0; /* Remove margin on the last button */
+  }
+  
+  .item-detail-container button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  .item-detail-container button[type="button"]:hover {
+    background-color: #c82333;
+  }
+  
+  /* Responsive layout */
+  @media (max-width: 768px) {
+    .item-detail-container {
+      padding: 15px;
+    }
+  
+    .item-detail-container h2 {
+      font-size: 22px;
+    }
+  
+    .item-detail-container input,
+    .item-detail-container button {
+      font-size: 16px;
+    }
+  
+    .item-detail-container button[type="submit"],
+    .item-detail-container button[type="button"] {
+      width: 100%; /* Full width on small screens */
+      margin-bottom: 10px;
+    }
+  }
+  

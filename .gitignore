@@ -43,3 +43,7 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+.python_packages
+__pycache__
+.venv

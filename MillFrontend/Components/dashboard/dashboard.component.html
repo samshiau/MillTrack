@@ -14,6 +14,7 @@
           <th>Unit Price</th>
           <th>Amount in Stock</th>
           <th>Status</th>
+          <th>Actions</th>
         </tr>
       </thead>
       <tbody>
@@ -28,6 +29,10 @@
           <td>
             <span *ngIf="item.isActive; else inactive">Active</span>
             <ng-template #inactive>Inactive</ng-template>
+          </td>
+          <td>
+            <!-- Add a button to navigate to the detail page -->
+            <button (click)="navigateToDetail(item)">Detail</button> <!-- Pass the item's ID -->
           </td>
         </tr>
       </tbody>

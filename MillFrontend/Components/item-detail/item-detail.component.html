@@ -1,0 +1,37 @@
+<div class="item-detail-container">
+    <h2>Update Inventory Item - {{ inventoryItem.name }}</h2>
+  
+    <form (ngSubmit)="updateItem()">
+      <div *ngIf="inventoryItem">
+        <label for="name">Product Name:</label>
+        <input type="text" id="name" [(ngModel)]="inventoryItem.name" name="name" required>
+  
+        <label for="sku">SKU:</label>
+        <input type="text" id="sku" [(ngModel)]="inventoryItem.sku" name="sku" required>
+  
+        <label for="description">Description:</label>
+        <input type="text" id="description" [(ngModel)]="inventoryItem.description" name="description">
+  
+        <label for="category">Category:</label>
+        <input type="text" id="category" [(ngModel)]="inventoryItem.category" name="category" required>
+  
+        <label for="location">Location:</label>
+        <input type="text" id="location" [(ngModel)]="inventoryItem.location" name="location" required>
+  
+        <label for="unitPrice">Unit Price:</label>
+        <input type="number" id="unitPrice" [(ngModel)]="inventoryItem.unitPrice" name="unitPrice" required>
+  
+        <label for="amountInStock">Amount in Stock:</label>
+        <input type="number" id="amountInStock" [(ngModel)]="inventoryItem.amountInStock" name="amountInStock" required>
+  
+        <label for="isActive">Is Active:</label>
+        <input type="checkbox" id="isActive" [(ngModel)]="inventoryItem.isActive" name="isActive">
+  
+        <!-- Submit button for update -->
+        <button type="submit">Update</button>
+        <!-- Button for delete -->
+        <button type="button" (click)="deleteItem()">Delete</button>
+      </div>
+    </form>
+  </div>
+  

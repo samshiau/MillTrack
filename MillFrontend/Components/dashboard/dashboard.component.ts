@@ -26,6 +26,11 @@ export class DashboardComponent implements OnInit {
     this.router.navigate(['/add-item']);  // Navigate to add item page
   }
 
+  navigateToDetail(item: any): void {
+    this.router.navigate(['/item-detail'], { state: { item: item } });  // Pass the entire item as state
+  }
+  
+
   getInventoryItems(): void {
     // API call to retrieve all inventory items
     this.http.get<any[]>('http://localhost:5079/api/inventory/all')  // Update URL to your API endpoint
