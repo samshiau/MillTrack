@@ -28,7 +28,6 @@ builder.Services.AddScoped<InventoryService>();
 builder.Services.AddHttpClient();
 builder.Services.AddControllers();
 string? constring = Environment.GetEnvironmentVariable("DB_CONNECTION_STRING");
-Console.WriteLine($"\n\n\nConnection String: {constring} \n\n\n");
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
@@ -37,7 +36,6 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 var app = builder.Build();
 
-//Console.WriteLine($"Connection String: {builder.Configuration.GetConnectionString("DefaultConnection")}");
 
 
 // Configure the HTTP request pipeline.

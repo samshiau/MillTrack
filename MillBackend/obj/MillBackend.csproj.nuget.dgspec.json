@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Samuel Shiau\\Desktop\\MillTrack\\millbackend\\MillBackend.csproj": {}
+    "C:\\Users\\Samuel Shiau\\Desktop\\MillTrack\\MillBackend\\MillBackend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Samuel Shiau\\Desktop\\MillTrack\\millbackend\\MillBackend.csproj": {
+    "C:\\Users\\Samuel Shiau\\Desktop\\MillTrack\\MillBackend\\MillBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Samuel Shiau\\Desktop\\MillTrack\\millbackend\\MillBackend.csproj",
+        "projectUniqueName": "C:\\Users\\Samuel Shiau\\Desktop\\MillTrack\\MillBackend\\MillBackend.csproj",
         "projectName": "MillBackend",
-        "projectPath": "C:\\Users\\Samuel Shiau\\Desktop\\MillTrack\\millbackend\\MillBackend.csproj",
+        "projectPath": "C:\\Users\\Samuel Shiau\\Desktop\\MillTrack\\MillBackend\\MillBackend.csproj",
         "packagesPath": "C:\\Users\\Samuel Shiau\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Samuel Shiau\\Desktop\\MillTrack\\millbackend\\obj\\",
+        "outputPath": "C:\\Users\\Samuel Shiau\\Desktop\\MillTrack\\MillBackend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Samuel Shiau\\AppData\\Roaming\\NuGet\\NuGet.Config"

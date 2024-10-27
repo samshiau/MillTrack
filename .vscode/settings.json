@@ -1,5 +1,5 @@
 {
-    "azureFunctions.deploySubpath": "MillAzFunc/bin/Release/net8.0/publish",
+    "azureFunctions.deploySubpath": "MillAzFunc/bin/Release/net6.0/publish",
     "azureFunctions.scmDoBuildDuringDeployment": true,
     "azureFunctions.pythonVenv": ".venv",
     "azureFunctions.projectLanguage": "C#",
