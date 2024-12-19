@@ -1,12 +1,30 @@
-FROM node:20.18.0 AS build
-WORKDIR /app
-COPY package*.json ./
+FROM node:alpine AS build 
+# use non alpine version for less issues
+
+WORKDIR /usr/src/app
+# set working directory in container
+
+COPY package.json package-lock.json ./
+
 RUN npm install
+
+#RUN npm install -g @angular/cli
+
 COPY . .
-RUN npm run build
+
+RUN npm run build --prod
 
 FROM nginx:alpine
-COPY --from=build /app/dist/mill-frontend /usr/share/nginx/html
-COPY ./default.conf /etc/nginx/conf.d/default.conf
+
+WORKDIR /usr/share/nginx/html
+
+RUN rm -rf ./*
+
+COPY --from=build /usr/src/app/dist/mill-frontend/browser /usr/share/nginx/html
 
 EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
+
+
+

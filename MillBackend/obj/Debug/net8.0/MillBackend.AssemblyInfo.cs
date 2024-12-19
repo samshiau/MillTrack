@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MillBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+88178d948684d1e46af4857781765b73d7c9963c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b517647de9e3efb1e956b68f68733ca811941d3")]
 [assembly: System.Reflection.AssemblyProductAttribute("MillBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MillBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

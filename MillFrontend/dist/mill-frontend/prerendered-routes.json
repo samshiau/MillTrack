@@ -1,8 +1,0 @@
-{
-  "routes": [
-    "/add-item",
-    "/dashboard",
-    "/item-detail",
-    "/login"
-  ]
-}
