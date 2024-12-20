@@ -14,4 +14,4 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0@sha256:6c4df091e4e531bb93bdbfe7e7f0998e
 WORKDIR /App
 # seems like the copy step did not move the dotnet dlls to the runtime image
 COPY --from=build-env /App/out .
-ENTRYPOINT ["dotnet", "DotNet.Docker.dll"]
+ENTRYPOINT ["dotnet", "MillBackend.dll"]
